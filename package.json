@@ -1,0 +1,56 @@
+{
+  "name": "@taml/parser",
+  "version": "1.0.0-alpha.1",
+  "description": "Parser for TAML (Terminal ANSI Markup Language) that generates AST nodes",
+  "keywords": [
+    "taml",
+    "parser",
+    "terminal-ansi-markup-language",
+    "tokenizer",
+    "ast",
+    "compiler"
+  ],
+  "homepage": "https://github.com/suin/taml-parser#readme",
+  "bugs": {
+    "url": "https://github.com/suin/taml-parser/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suin/taml-parser.git"
+  },
+  "license": "MIT",
+  "author": "suin",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./js/index.d.ts",
+      "import": "./js/index.js",
+      "require": "./js/index.js"
+    }
+  },
+  "main": "./js/index.js",
+  "module": "./js/index.js",
+  "types": "./js/index.d.ts",
+  "files": [
+    "js/**/*",
+    "ts/**/*",
+    "!ts/**/*.test.*",
+    "!ts/**/*.spec.*",
+    "!ts/**/__tests__"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "rm -rf js *.tsbuildinfo",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@taml/ast": "^1.0.0"
+  },
+  "devDependencies": {
+    "@tsconfig/bun": "latest",
+    "@tsconfig/node22": "latest",
+    "@tsconfig/strictest": "latest",
+    "@types/bun": "latest",
+    "typescript": "latest"
+  }
+}
