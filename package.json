@@ -1,6 +1,6 @@
 {
   "name": "@taml/parser",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "description": "Parser for TAML (Terminal ANSI Markup Language) that generates AST nodes",
   "keywords": [
     "taml",
