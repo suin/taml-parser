@@ -36,7 +36,7 @@
     "ts/**/*",
     "!ts/**/*.test.*",
     "!ts/**/*.spec.*",
-    "!ts/**/__tests__"
+    "!ts/**/__tests__/*"
   ],
   "scripts": {
     "build": "tsc -b",
